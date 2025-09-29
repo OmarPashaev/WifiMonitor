@@ -4,21 +4,21 @@ A small project where I used a Raspberry Pi with an Alfa Wi-Fi adapter in **moni
 
 ---
 
-## 🎯 Goals
+## Goals
 - Learn how Wi-Fi monitoring works.  
 - Use `tcpdump` and Wireshark to collect and analyze packets.  
 - Document and anonymize findings in an ethical way.  
 
 ---
 
-## ⚙️ Setup
+## Setup
 - **Hardware:** Raspberry Pi + Alfa AWUS036ACM adapter.  
 - **Software:** Raspberry Pi OS, `aircrack-ng`, `tcpdump`, `tshark`, Wireshark.  
 - The adapter was set in *monitor mode* (`wlan1mon`) for passive sniffing.
 
 ---
 
-## 📡 Procedure
+## Procedure
 1. Set the adapter in monitor mode.  
 2. Ran `tcpdump` for 30 seconds to capture packets.  
 3. Opened the `.pcap` file in Wireshark to analyze beacon and probe frames.  
@@ -26,7 +26,7 @@ A small project where I used a Raspberry Pi with an Alfa Wi-Fi adapter in **moni
 
 ---
 
-## 📸 Evidence (screenshots)
+## Evidence (screenshots)
 
 **Terminal capture (tcpdump):**  
 ![Terminal Capture](screenshots/terminal_capture.png)
@@ -39,20 +39,20 @@ A small project where I used a Raspberry Pi with an Alfa Wi-Fi adapter in **moni
 
 ---
 
-## 🔒 Ethical considerations
+## Ethical considerations
 - Tested only on my own network / devices.  
 - MAC addresses were anonymized before sharing.  
 - Screenshots are either edited or taken on wildcard probes to avoid exposing real SSIDs.  
 
 ---
 
-## 🚀 Future work
+## Future work
 - Add a simple Python visualization (number of APs/clients, signal strength).  
 - Automate anonymization and export.  
 
 ---
 
-## 📖 What I learned
+## What I learned
 - How to set up a Wi-Fi adapter in monitor mode.  
 - The difference between beacon frames and probe requests in practice.  
 - How to responsibly handle sensitive wireless metadata.
